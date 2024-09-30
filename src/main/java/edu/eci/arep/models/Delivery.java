@@ -1,4 +1,4 @@
-package jpa.demo.models;
+package edu.eci.arep.models;
 
 
 import jakarta.persistence.Entity;

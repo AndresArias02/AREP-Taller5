@@ -1,7 +1,5 @@
-package jpa.demo;
+package edu.eci.arep;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,10 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author: Andrés Arias
  */
 @SpringBootApplication
-public class DemoApplication {
-	private static final Logger log = LoggerFactory.getLogger(DemoApplication.class);
+public class DeliveryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(DeliveryApplication.class, args);
 	}
 }

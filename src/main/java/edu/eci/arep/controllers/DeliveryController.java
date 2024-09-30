@@ -1,7 +1,7 @@
-package jpa.demo.controllers;
+package edu.eci.arep.controllers;
 
-import jpa.demo.models.Delivery;
-import jpa.demo.services.DeliveryService;
+import edu.eci.arep.models.Delivery;
+import edu.eci.arep.services.DeliveryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -33,15 +33,6 @@ public class DeliveryController {
        return deliveryService.getAllDeliveries();
     }
 
-    /**
-     * Get a delivery by id
-     * @param id id of the delivery
-     * @return Delivery
-     */
-    @GetMapping("/deliveries/{id}")
-    public ResponseEntity<Delivery> getDeliveryById(@PathVariable long id){
-        return new ResponseEntity<>(deliveryService.getDeliveryById(id), HttpStatus.OK);
-    }
 
     /**
      * Add a new delivery

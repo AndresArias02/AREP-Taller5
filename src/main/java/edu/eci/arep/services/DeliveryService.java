@@ -1,7 +1,7 @@
-package jpa.demo.services;
+package edu.eci.arep.services;
 
-import jpa.demo.models.Delivery;
-import jpa.demo.repositorys.DeliveryRepository;
+import edu.eci.arep.models.Delivery;
+import edu.eci.arep.repositorys.DeliveryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -36,7 +36,11 @@ public class DeliveryService {
      * @return Delivery
      */
     public Delivery getDeliveryById(long id){
-        return deliveryRepository.findById(id);
+        Optional<Delivery> delivery = deliveryRepository.findById(id);
+        if(delivery.isPresent()){
+            return delivery.get();
+        }
+        return null;
     }
 
     /**
