@@ -36,7 +36,7 @@ public class Properties {
      * @param size size of the property
      * @param description description of the property
      */
-    public Properties(String address, String price, String size, String description) {
+    public Properties(Long id, String address, String price, String size, String description) {
         this.address = address;
         this.price = price;
         this.size = size;

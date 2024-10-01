@@ -1,7 +1,7 @@
 // Función para obtener todas las entregas y mostrar en la tabla
 function fetchDeliveries() {
-    fetch("/api/deliveries")
-        .then(response => response.json())
+    fetch("/api/properties")
+        .then(response => response.json()) // Se eliminó el punto antes de .then
         .then(data => {
             const deliveryTableBody = document.getElementById("deliveryTableBody");
             deliveryTableBody.innerHTML = ""; // Limpiar la tabla existente
@@ -37,6 +37,7 @@ function fetchDeliveries() {
         .catch(error => console.error("Error fetching deliveries:", error));
 }
 
+
 // Llamar la función fetchDeliveries() cuando la página se cargue
 window.onload = function() {
     fetchDeliveries();
@@ -57,7 +58,7 @@ document.getElementById("deliveryForm").addEventListener("submit", function(even
 
     if (id) {
         // Si el campo ID está lleno, se actualiza la entrega
-        fetch(`/api/deliveries/${id}`, {
+        fetch(`/api/properties/${id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
@@ -76,7 +77,7 @@ document.getElementById("deliveryForm").addEventListener("submit", function(even
         .catch(error => console.error("Error updating delivery:", error));
     } else {
         // Si el campo ID está vacío, se agrega una nueva entrega
-        fetch("/api/deliveries", {
+        fetch("/api/properties", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -98,7 +99,7 @@ document.getElementById("deleteDeliveryBtn").addEventListener("click", function(
     const id = document.getElementById("id").value;
 
     if (id) {
-        fetch(`/api/deliveries/${id}`, {
+        fetch(`/api/properties/${id}`, {
             method: "DELETE"
         })
         .then(response => {
