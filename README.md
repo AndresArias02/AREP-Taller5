@@ -134,7 +134,7 @@ Este diagrama y flujo reflejan cómo la arquitectura cliente-servidor funciona e
 
 ### Property
 
-Esta parte del codigo representa el modelo de datos que se va a almacenar en la base de datos. En este caso, la propiedad tiene los siguientes atributos: id, address, price, size y description. Cada propiedad tiene un identificador único (id) y una descripción, un precio, un tamaño y una dirección.
+Esta parte del código representa el modelo de datos que se va a almacenar en la base de datos. En este caso, la propiedad tiene los siguientes atributos: id, address, price, size y description. Cada propiedad tiene un identificador único (id) y una descripción, un precio, un tamaño y una dirección.
 
 ```bash
         @Entity
@@ -256,7 +256,7 @@ Para instalar y ejecutar esta aplicación, sigue los siguientes pasos:
 
    ```bash
    git clone https://github.com/AndresArias02/AREP-Taller5.git
-   cd AREP-taller5
+   cd AREP-Taller5
    ```
 
 2. **Compilar y ejecutar:**
