@@ -9,13 +9,13 @@
 </head>
 <body>
 <nav>
-    <h1>Delivery Management</h1>
+    <h1>system for managing real estate</h1>
 </nav>
 
 <div class="container">
 
     <div class="form-container">
-        <h2>Add or Update Delivery</h2>
+        <h2>Add or Update a Property</h2>
         <form id="deliveryForm">
             <label for="id">ID (for Update/Delete):</label>
             <input type="number" id="id" name="id" placeholder="Leave empty to add new delivery">
@@ -32,15 +32,15 @@
             <label for="description">Description:</label>
             <textarea id="description" name="description"></textarea>
 
-            <button type="submit">Add / Update Delivery</button>
+            <button type="submit">Add / Update Property</button>
         </form>
 
-        <button id="deleteDeliveryBtn">Delete Delivery</button>
+        <button id="deleteDeliveryBtn">Delete Property</button>
     </div>
 
     <div class="list-container">
-        <h2>Deliveries</h2>
-        <button id="fetchDeliveriesBtn">Fetch All Deliveries</button>
+        <h2>Properties</h2>
+        <button id="fetchDeliveriesBtn">Fetch All Properties</button>
 
         <table id="deliveryTable" border="1">
             <thead>

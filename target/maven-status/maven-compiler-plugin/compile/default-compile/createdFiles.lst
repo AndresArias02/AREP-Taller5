@@ -1,0 +1,5 @@
+edu/eci/arep/PropertiesApplication.class
+edu/eci/arep/services/PropertiesService.class
+edu/eci/arep/repositorys/PropertiesRepository.class
+edu/eci/arep/models/Properties.class
+edu/eci/arep/controllers/PropertiesController.class
